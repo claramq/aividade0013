@@ -36,9 +36,6 @@ async function insertUsuario(data) {
   client.release();
 }
 
-//bd.js
-
-//bd.js
 async function deleteUsuario(id) {
   const client = await connect();
   const query = "DELETE FROM usuario WHERE id = $1";
